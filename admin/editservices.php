@@ -106,6 +106,9 @@ include("includes/db.php");
 
         </div>
     </div>
+    <?php include("assets/content/script.php"); ?>
+    <script>
+        changeNav("services-nav");
+    </script>
 </body>
-
 </html>

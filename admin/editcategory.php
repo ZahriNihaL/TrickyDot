@@ -82,6 +82,9 @@ include("includes/db.php");
 
         </div>
     </div>
+    <?php include("assets/content/script.php"); ?>
+    <script>
+        changeNav("category-nav");
+    </script>
 </body>
-
 </html>

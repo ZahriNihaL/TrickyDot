@@ -1,24 +1,17 @@
 <?php
-
-include("admin/includes/db.php");
-
+include("admin/assets/includes/db.php");
 ?>
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <?php include('style.php') ?>
-
-  </head>
-  <body>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php include('css/style.php') ?>
+</head>
+<body>
    
     <!-- --------------------------navbar start------------------------------ -->
-
-
 
     <?php include('contents/nav.php') ?>
 
@@ -28,16 +21,9 @@ include("admin/includes/db.php");
             </button>
         </div>
 
-    
-    
     <!-- --------------------------navbar end------------------------------ -->
 
-   
-
-
-
-
-       <!-- --------------------------------portfolio start---------------------------- -->
+    <!-- --------------------------------portfolio start---------------------------- -->
 
 
     <section class="portfolio" id="portfolio">
@@ -48,19 +34,11 @@ include("admin/includes/db.php");
             <div class="portfolio-details padding-gap">
                 <p class="sub-paragraph">There is a lot within a few. For the overview of the services, see our portfolio. </p>
             </div>
-
-            <!-- <div class="portfolio-gallery"></div> -->
-            <!-- <div class = "row">
-                    
-                </div> -->
-
             <div class="portfolio-gallery">
                 <div class="row mt-3 mb-4 button-group filter-button-group">
                     <div class="col d-flex filter-buttons">
-                        <button type="button" data-filter="*" class="btn btn-primary mx-1 text-dark active
-                        ">All</button>
+                        <button type="button" data-filter="*" class="btn btn-primary mx-1 text-dark active">All</button>
                         <?php
-           
                             $sql = "select * from tbl_category";
                             $run = mysqli_query($con, $sql);
                             while($row = mysqli_fetch_array($run)){
@@ -73,9 +51,7 @@ include("admin/includes/db.php");
                         
                     </div> 
                 </div>
-    
                 <div class="row justify-content-center g-4" id="portfolio-works">
-
 
                     <?php
                         $sql = "select * from tbl_portfolio";
@@ -108,14 +84,9 @@ include("admin/includes/db.php");
 
 <!-- --------------------------------portfolio end---------------------------- -->
     
-
-
-
 <!-- --------------------------------footer start---------------------------- -->
 
-
-<?php include('footer.php') ?>
-
+<?php include('contents/footer.php') ?>
 
 <!-- -------------------------------get a quote modal--------------------------- -->
 
@@ -123,9 +94,7 @@ include("admin/includes/db.php");
 
 <!-- -------------------------------get a quote modal--------------------------- -->
 
+<?php include('contents/script.php') ?>
 
-<?php include('script.php') ?>
-
-   </body>
-   
+</body>
 </html>

@@ -1,31 +1,18 @@
 <?php
-
-session_start();
-if (!isset($_SESSION["loggedin"])) {
-    header("Location:login.php");
-}
-
+include("assets/includes/db.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    
-    <?php include('style.php') ?>
-    
-    <title>Dashboard</title>
-
-
+  <?php
+  include("assets/css/style.php");
+  ?>
+  <title>Customers</title>
 </head>
-
 <body>
-    <div class="row min-vh-100 g-0">
-
-        <?php include("content/navbar.php") ?>
-
-        <div class="col-lg-10 wrapper">
-
+  <?php include("assets/content/navbar.php") ?>
+    <section class="home">
+        <div class="text">
             <div class="card custom-card-2">
                 <div class="card-body p-3 d-flex align-items-center justify-content-between">
                     <h5 class="mb-0 fw-bold">CUSTOMERS</h5>
@@ -55,7 +42,7 @@ if (!isset($_SESSION["loggedin"])) {
 
             <div class="card custom-card mt-2">
                 <div class="card-body p-4">
-                    <form method="post" action="functions/functions.php" enctype="multipart/form-data">
+                    <form method="post" action="assets/functions/functions.php" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label class="form-label" for="title">Brand Name :</label>
                             <input type="text" class="form-control" name="brand_name" id="title" placeholder="Enter Brand Name" required>
@@ -70,9 +57,11 @@ if (!isset($_SESSION["loggedin"])) {
                     </form>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
+    <?php include("assets/content/script.php"); ?>
+    <script>
+        changeNav("customers-nav");
+    </script>
 </body>
-
 </html>

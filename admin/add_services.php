@@ -1,36 +1,26 @@
 <?php
-
-session_start();
-if (!isset($_SESSION["loggedin"])) {
-    header("Location:login.php");
-}
-
+include("assets/includes/db.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <?php include('style.php') ?>
-    <title>Dashboard</title>
+  <?php
+  include("assets/css/style.php");
+  ?>
+  <title>Services</title>
 </head>
-
 <body>
-    <div class="row min-vh-100 g-0">
-
-        <?php include("content/navbar.php") ?>
-
-        <div class="col-lg-10 wrapper">
-
+  <?php include("assets/content/navbar.php") ?>
+    <section class="home">
+        <div class="text">
             <div class="card custom-card-2">
                 <div class="card-body p-3 d-flex align-items-center justify-content-between">
-                    <h5 class="mb-0 fw-bold">Add Services</h5>
+                    <h5 class="mb-0 fw-bold">ADD SERVICES</h5>
                 </div>
             </div>
-
             <div class="card custom-card-2 mt-2">
                 <div class="card-body p-4">
-                    <form method="post" action="functions/functions.php" enctype="multipart/form-data">
+                    <form method="post" action="assets/functions/functions.php" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label class="form-label" for="title">Title :</label>
                             <input type="text" class="form-control" name="title" id="title" placeholder="Enter title" required>
@@ -48,19 +38,19 @@ if (!isset($_SESSION["loggedin"])) {
                             <label class="form-label" for="description">Description :</label>
                             <textarea class="form-control" name="description" id="summernote" placeholder="Enter the description" required></textarea>
                         </div>
-
                         <br>
                         <div class="mb-3"> 
-                            <button type="submit" class="btn btn-success float-end" name="add_services" style="background-color: #7d1128;"> Add Services</button>
+                            <button type="submit" class="btn btn-success float-end" name="add_services" style="background-color: #7d1128;">SUBMIT</button>
                         </div>
                     </form>
                 </div>
             </div>
-
         </div>
-    </div>
-
-    <?php include("script.php"); ?>
+    </section>
+    </div> 
+    <?php include("assets/content/script.php"); ?>
+    <script>
+        changeNav("services-nav");
+    </script>
 </body>
-
 </html>

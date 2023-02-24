@@ -10,28 +10,25 @@
                         <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                         <h5 class="modal-title mt-4 fw-bold text-center" id="staticBackdropLabel">Request a Quote</h5>
                         <p class="text-center" style="font-size:12px ;">Please fill out the form below to request a quote</p>
-                        <form>
+                        <form method="POST" action="functions/functions.php">
                             <div class=" p-3">
-                                <input type="text" class="form-control" id="" placeholder="Full Name">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Full Name">
                             </div>
                             <div class="p-3">
-                                <input type="email" class="form-control" id="" placeholder="Email">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                             </div>
                             <div class="p-3">
-                                <input type="number" class="form-control" id="" placeholder="Phone numer">
+                                <input type="number" class="form-control" name="phone_number" id="phone_number" placeholder="Phone numer">
                             </div>
                         </form>
-
                         <div class="d-flex buttons">
-
                             <div class="submit-btn">
-                                <button type="button btn-sm text-white" class="btn " style="font-size: 13px;">Submit</button>
+                                <button type="submit text-white" class="btn" name="quotes" style="font-size: 13px;">Submit</button>
                             </div>
                             <div class="close-btn">
                                 <button type="button btn-sm" class="btn" style="font-size: 13px;" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

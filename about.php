@@ -1,18 +1,15 @@
 <?php
-
-include("admin/includes/db.php");
-
+include("admin/assets/includes/db.php");
 ?>
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<head>
+  <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <title>tryckyDot</title> -->
     
-    <?php include('style.php') ?>
+    <?php include('css/style.php') ?>
     
   </head>
   <body>
@@ -104,28 +101,7 @@ include("admin/includes/db.php");
                 }
               ?>
           </div>
-          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span> -->
-          </button>
-        </div>
-      </div>
-
-
-
-      <!-- <div class="about-us-img1">
-        <img src="images/about-us/about-img-1.jpg" alt="" class="img-fluid">
-      </div> -->
-
   </div>
-
-
-
-
       <div class="year-of-experience ">
         <div class="container">
           <div class="about-contents">
@@ -203,18 +179,10 @@ include("admin/includes/db.php");
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
-      
       </div>
     
-      
-      
-      
-
-
-
 <!-- -----------------------------our team start----------------------------------------->
 
 <div class="our-team">
@@ -271,257 +239,19 @@ include("admin/includes/db.php");
         </div>
       </div>
 
-
 <!-- -----------------------------our team end----------------------------------------->
 
+<!-- --------------------------------footer start---------------------------- -->
 
-
-
-
-
-
-
-
-
-<!-- -----------------------------our story start----------------------------------------->
-
-
-<!-- <div class="our-story">
-  <div class="container">
-    <h4 class="fw-bold main-head">Our <b class="subhead">story</b></h4>
-    <div class="our-story-para">
-      <p class="sub-paragraph  text-justify mb-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. Praesent scelerisque lectus vitae ligula fermentum, eget gravida mi scelerisque.</p>
-    </div>
-    <div class="circle-1">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
-        <circle cx="8" cy="8" r="8"/>
-      </svg>
-    </div>
-    <div class="time-line">
-      <div class="row ">
-        <div class="col-lg-8 p-3 bottom-border left-border">
-          <div class="row">
-            <div class="col-lg-8 p-4">
-              <h5 class="mt-5">Date</h5>
-              <p>Lorem ipsum dolor sit amet</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. In volutpat enim quis tellus hendrerit tincidunt eu at lectus.</p>
-            </div>
-            <div class="col-lg-4">
-              <div class="timeline-img timeline-img-1">
-                <img src="images/about-us/time-line/1.jpg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 bottom-border p-4">
-
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4  p-3"></div>
-        <div class="col-lg-8 column-3 ">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="timeline-img timeline-img-2">
-                <img src="images/about-us/time-line/2.jpg" alt="">
-              </div>
-            </div>
-            <div class="col-lg-8 right-border  p-4">
-              <h5 class="mt-5">Date</h5>
-              <p>Lorem ipsum dolor sit amet</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. In volutpat enim quis tellus hendrerit tincidunt eu at lectus.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="row ">
-        <div class="col-lg-8 top-border left-border bottom-border">
-          <div class="row">
-            <div class="col-lg-8">
-              <h5 class="mt-5">Date</h5>
-              <p>Lorem ipsum dolor sit amet</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. In volutpat enim quis tellus hendrerit tincidunt eu at lectus.</p>
-            </div>
-            <div class="col-lg-4">
-              <div class="timeline-img timeline-img-3">
-                <img src="images/about-us/time-line/3.jpg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 top-border bottom-border">
-
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 "></div>
-        <div class="col-lg-8  ">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="timeline-img timeline-img-4">
-                <img src="images/about-us/time-line/4.jpg" alt="">
-              </div>
-            </div>
-            <div class="col-lg-8 right-border">
-              <h5 class="mt-5">Date</h5>
-              <p>Lorem ipsum dolor sit amet</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. In volutpat enim quis tellus hendrerit tincidunt eu at lectus.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="circle-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
-          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-        </svg>
-      </div>
-      
-    </div>
-  </div>
-</div> -->
-</div>
-
-
-<!-- -----------------------------our story end----------------------------------------->
-
-
-
-
-
-
-<!-- -----------------------------FAQ start----------------------------------------->
-
-
-<!-- <div class="faq">
-  <div class="container">
-    <h4 class="fw-bold main-head">FAQ? How can we <b class="subhead">Help?</b></h4>
-      <div class="faq-para">
-        <p class="sub-paragraph  text-justify mb-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. Praesent scelerisque lectus vitae ligula fermentum, eget gravida mi scelerisque.</p>
-      </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="content">
-          
-          
-          <div>
-            <input type="checkbox" id="question1" name="q"  class="questions">
-            <div class="plus">+</div>
-            <label for="question1" class="question">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem
-            </label>
-            <div class="answers">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. </p>
-              
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="question2" name="q" class="questions">
-            <div class="plus">+</div>
-            <label for="question2" class="question">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem    </label>
-            <div class="answers">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. </p>
-              
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="question3" name="q" class="questions">
-            <div class="plus">+</div>
-            <label for="question3" class="question">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem    </label>
-            <div class="answers">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. </p>
-              
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="question4" name="q" class="questions">
-            <div class="plus">+</div>
-            <label for="question4" class="question">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem    
-            </label>
-            <div class="answers">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. </p>
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="question5" name="q" class="questions">
-            <div class="plus">+</div>
-            <label for="question5" class="question">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem    
-            </label>
-            <div class="answers">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. </p>
-              
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="question6" name="q" class="questions">
-            <div class="plus">+</div>
-            <label for="question6" class="question">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem    
-            </label>
-            <div class="answers">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. </p>
-              
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="question7" name="q" class="questions">
-            <div class="plus">+</div>
-            <label for="question7" class="question">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem    
-            </label>
-            <div class="answers">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. </p>
-              
-            </div>
-          </div>
-          
-          
-          
-          </div>
-      </div>
-  
-      <div class="col-lg-6">
-        <img src="images/faq2.png" alt="" class="img-fluid">
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-<!-- -----------------------------FAQ end----------------------------------------->
-
-
-
-<!-- -----------------------------About end----------------------------------------->
-
-
-
- <!-- --------------------------------footer start---------------------------- -->
-
- <?php include('footer.php') ?>
+<?php include('contents/footer.php') ?>
  
 <!-- -------------------------------get a quote modal--------------------------- -->
 
- 
 <?php include('model.php') ?>
 
 <!-- -------------------------------get a quote modal--------------------------- -->
 
-
-
-
-<?php include('script.php') ?>
-
-
-
+<?php include('contents/script.php') ?>
 
 </body>
 </html>

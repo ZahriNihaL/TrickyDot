@@ -1,27 +1,15 @@
 <?php
-
-include("admin/includes/db.php");
-
+include("admin/assets/includes/db.php");
 ?>
-
 <!doctype html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-
-    <title>tryckyDot</title>
-    
-    <?php include('style.php') ?>
-    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tryckyDot</title>
+<?php include('css/style.php') ?>
 </head>
-
 <body>
-
 
     <!-- --------------------------navbar start------------------------------ -->
 
@@ -61,10 +49,7 @@ include("admin/includes/db.php");
 
     <!-- --------------------------------carousel end---------------------------- -->
 
-
-
     <!-- --------------------------------about start---------------------------- -->
-
 
     <section class="about">
         <div class="container">
@@ -86,7 +71,6 @@ include("admin/includes/db.php");
                     <img src="images/about-img.png" alt="" class="img-fluid vert-move ">
                 </div>
             </div>
-
 
             <div class="map">
                 <div class="row">
@@ -131,13 +115,10 @@ include("admin/includes/db.php");
             </div>
         </div>
     </section>
+
     <!-- --------------------------------about end---------------------------- -->
 
-
-
-
     <!-- --------------------------------Services start---------------------------- -->
-
 
     <section class="services">
         <div class="container">
@@ -182,18 +163,9 @@ include("admin/includes/db.php");
         </div>
     </section>
 
-
     <!-- --------------------------------Services end---------------------------- -->
 
-
-
-
-
-
-
     <!-- --------------------------------Customers start------------------------------->
-
-
 
     <section class="customers">
         <div class="customer-background">
@@ -202,9 +174,6 @@ include("admin/includes/db.php");
                     <h2 class="fw-bold main-head">Our <b class="subhead">Customers</b></h2><br><br><br>
                 </div>
                 <div class="customers-details">
-                    <!-- <h5 class="sub-paragraph">Our customers! </h5>
-                    <h4 class="sub-paragraph">Here to talk about us.</h4>
-                    <p class="sub-paragraph">See the happy milestones here.</p> -->
                 </div>
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
@@ -249,7 +218,6 @@ include("admin/includes/db.php");
                                 }
 
                         ?>
-
                                 </div>
                                 <div class="prev-button d-none d-md-block">
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -271,16 +239,7 @@ include("admin/includes/db.php");
             </div>
     </section>
 
-
-
     <!-- --------------------------------Customers end---------------------------- -->
-
-
-
-
-
-
-
 
     <!-- --------------------------------portfolio start---------------------------- -->
 
@@ -295,16 +254,7 @@ include("admin/includes/db.php");
                 <p class="sub-paragraph">There is a lot within a few. For the overview of the services, see our portfolio. </p>
             </div>
 
-            <!-- <div class="portfolio-gallery"></div> -->
-            <!-- <div class = "row">
-                    
-                </div> -->
-
             <div class="portfolio-gallery">
-            
-                <!-- <div class = "row">
-                    
-                </div> -->
           
                 <div class = "row mt-3 mb-4 button-group filter-button-group">
                     <div class = "col d-flex filter-buttons">
@@ -364,335 +314,7 @@ include("admin/includes/db.php");
 
     <!-- --------------------------------portfolio end---------------------------- -->
 
-
-    <!-- --------------------------------testimonial start---------------------------- -->
-
-
-    <!-- <section class="testimonials">
-
-        <div class="container">
-            <div class="main-head">
-                <h2 class="fw-bold main-head">Client <b class="subhead">Reviews</b></h2>
-            </div>
-             
-            <div class="portfolio-details">
-                <p class="sub-paragraph"><h5 class="sub-paragraph">Our customers! </h5>
-                    <h4 class="sub-paragraph">Here to talk about us.</h4>
-                    <p class="sub-paragraph">See the happy milestones here.</p></p>
-            </div>
-
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-lg-4 reviews">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row align-items-center mb-3">
-                                            <div class="col-lg-3">
-                                                <img src="images/testimonials/1.png" class="card-img-top" alt="">
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="card-title client-name mb-0">Riya</h5>
-                                                <p class="designation mb-0">UI/UX Designer</p>
-                                            </div>
-                                        </div>
-                                        <div class="client-review">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus
-                                                in ex. Praesent elementum metus vel suscipit tempus.</p>
-                                        </div>
-
-                                        <div class="d-flex stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 reviews">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row align-items-center mb-3">
-                                            <div class="col-lg-3">
-                                                <img src="images/testimonials/2.png" class="card-img-top" alt="">
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="card-title client-name mb-0">Riya</h5>
-                                                <p class="designation mb-0">UI/UX Designer</p>
-                                            </div>
-                                        </div>
-                                        <div class="client-review">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus
-                                                in ex. Praesent elementum metus vel suscipit tempus.</p>
-                                        </div>
-
-                                        <div class="d-flex stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 reviews">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row align-items-center mb-3">
-                                            <div class="col-lg-3">
-                                                <img src="images/testimonials/1.png" class="card-img-top" alt="">
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="card-title client-name mb-0">Riya</h5>
-                                                <p class="designation mb-0">UI/UX Designer</p>
-                                            </div>
-                                        </div>
-                                        <div class="client-review">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus
-                                                in ex. Praesent elementum metus vel suscipit tempus.</p>
-                                        </div>
-                                        <div class="d-flex stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-4 reviews">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row align-items-center mb-3">
-                                            <div class="col-lg-3">
-                                                <img src="images/testimonials/1.png" class="card-img-top" alt="">
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="card-title client-name mb-0">Riya</h5>
-                                                <p class="designation mb-0">UI/UX Designer</p>
-                                            </div>
-                                        </div>
-                                        <div class="client-review">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus
-                                                in ex. Praesent elementum metus vel suscipit tempus.</p>
-                                        </div>
-                                        <div class="d-flex stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 reviews">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row align-items-center mb-3">
-                                            <div class="col-lg-3">
-                                                <img src="images/testimonials/1.png" class="card-img-top" alt="">
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="card-title client-name mb-0">Riya</h5>
-                                                <p class="designation mb-0">UI/UX Designer</p>
-                                            </div>
-                                        </div>
-                                        <div class="client-review">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus
-                                                in ex. Praesent elementum metus vel suscipit tempus.</p>
-                                        </div>
-
-                                        <div class="d-flex stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 reviews">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row align-items-center mb-3">
-                                            <div class="col-lg-3">
-                                                <img src="images/testimonials/1.png" class="card-img-top" alt="">
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <h5 class="card-title client-name mb-0">Riya</h5>
-                                                <p class="designation mb-0">UI/UX Designer</p>
-                                            </div>
-                                        </div>
-                                        <div class="client-review">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus
-                                                in ex. Praesent elementum metus vel suscipit tempus.</p>
-                                        </div>
-                                        <div class="d-flex stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-]                </div>
-\
-            </div>
-        </div>
-    </section> -->
-
-    <!-- --------------------------------testimonial end---------------------------- -->
-
-
     <!-- --------------------------------hire a developer start---------------------------- -->
-
 
     <section class="hire-a-developer">
         <div class="container">
@@ -800,26 +422,43 @@ include("admin/includes/db.php");
             <div class="contact-details padding-gap">
                 <p class="sub-paragraph">Please feel free to get in touch with us if you have any additional questions or concerns. We are always available to assist you with further solutions. </p>
             </div>
-
+            <?php
+                if(isset($_GET["error"])){
+                ?>
+                    <div class="alert alert-danger text-center mt-2 w-50 ms-auto me-auto" role="alert">
+                        <?php
+                        $error = $_GET["error"];
+                        echo $error;
+                        ?>
+                    </div>
+                <?php
+                }else if(isset($_GET["success"])){
+                ?>
+                    <div class="alert alert-success text-center mt-2 w-50 ms-auto me-auto" role="alert">
+                        <?php
+                        $error = $_GET["success"];
+                        echo $error;
+                        ?>
+                    </div>
+                <?php } ?>
             <div class="form-contents">
                 <div class="row">
                     <div class="col-lg-6 order-1 order-md-0">
-                        <form>
+                    <form method="POST" action="functions/functions.php">
                             <div class="mb-3">
-                                <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your name" Required>
+                                <input type="name" class="form-control" name="name" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your name" Required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" Required>
+                                <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" Required>
                             </div>
                             <div class="mb-3">
-                                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="Phone number" Required>
+                                <input type="number" class="form-control" name="phone_number" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="Phone number" Required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message"></textarea>
+                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message"></textarea>
                             </div>
-
-                            <button type="submit" class="btn">Send a message</button>
-                        </form>
+                            <button type="submit" class="btn" name="send_message">Send a message</button>
+                    </form>
                     </div>
                     <div class="col-lg-6 contact-img order-0 order-md-1">
                         <img src="images/contact.png" alt="" class="img-fluid vert-move">
@@ -841,11 +480,6 @@ include("admin/includes/db.php");
 
             <div class="address-deatils">
                 <div class="row">
-                    <!-- <div class="col-lg-4 ">
-                        <div class="office-address-img">
-                            <img src="images/contact-office.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div> -->
                     <div class="col-lg-2 ">
                         <div class="office-address">
                             <div class="address-contents ">
@@ -957,19 +591,11 @@ include("admin/includes/db.php");
 
     <!-- --------------------------------footer start---------------------------- -->
 
-    <?php include('footer.php') ?>
-
-    
-    
+    <?php include('contents/footer.php') ?>
 
     <?php include('model.php') ?>
 
-
-
-
-    <?php include('script.php') ?>
-
+    <?php include('contents/script.php') ?>
        
 </body>
-
 </html>

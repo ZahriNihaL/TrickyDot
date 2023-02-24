@@ -1,44 +1,31 @@
 
 <?php
-
-include("admin/includes/db.php");
-
+include("admin/assets/includes/db.php");
 ?>
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <?php include('style.php') ?>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php include('css/style.php') ?>
+</head>
+<body>
+  
+<!-- -----------------------------Nav start----------------------------------- -->
 
-  </head>
-  <body>
-   
-
- <!-- -----------------------------Nav start----------------------------------- -->
-
- 
  <?php include('contents/nav.php') ?>
-    
     <div class="quote-btn">
         <button type="button" class="btn btn-sm" style="display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Get a Quote
         </button>
     </div>
 
-
- <!-- -----------------------------Nav end----------------------------------- -->
-
-
+<!-- -----------------------------Nav end----------------------------------- -->
 
 <!-- -----------------------------services start----------------------------------------->
 
-
-  
 <!-- -----------------------------services end----------------------------------------->
-
 
 <section class="our-services">
       <div class="services-bg">
@@ -92,18 +79,14 @@ include("admin/includes/db.php");
   </section>
 
 
-  <?php include('footer.php') ?>
+<?php include('contents/footer.php') ?>
 
 <!-- -------------------------------get a quote modal--------------------------- -->
 
- 
 <?php include('model.php') ?>
 
 <!-- -------------------------------get a quote modal--------------------------- -->
 
-
-
-<?php include('script.php') ?>
-
+<?php include('contents/script.php') ?>
 </body>
 </html>

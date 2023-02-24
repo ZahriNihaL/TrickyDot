@@ -1,32 +1,18 @@
 <?php
-
-session_start();
-if (!isset($_SESSION["loggedin"])) {
-    header("Location:login.php");
-}
-
-include("includes/db.php");
+include("assets/includes/db.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    
-    <?php include('style.php') ?>
-
-    <title>Dashboard</title>
-
-
+  <?php
+  include("assets/css/style.php");
+  ?>
+  <title>Portfolio</title>
 </head>
-
 <body>
-    <div class="row min-vh-100 g-0">
-
-        <?php include("content/navbar.php") ?>
-
-        <div class="col-lg-10 wrapper">
-
+  <?php include("assets/content/navbar.php") ?>
+    <section class="home">
+        <div class="text">
             <div class="card custom-card-2">
                 <div class="card-body p-3 d-flex align-items-center justify-content-between">
                     <h5 class="mb-0 fw-bold">PORTFOLIO</h5>
@@ -77,9 +63,11 @@ include("includes/db.php");
                     </form>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
+    <?php include("assets/content/script.php"); ?>
+    <script>
+        changeNav("portfolio-nav");
+    </script>
 </body>
-
 </html>

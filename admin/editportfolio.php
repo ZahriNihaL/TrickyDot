@@ -120,6 +120,9 @@ include("includes/db.php");
             </div>
         </div>
     </div>
+    <?php include("assets/content/script.php"); ?>
+    <script>
+        changeNav("portfolio-nav");
+    </script>
 </body>
-
 </html>
