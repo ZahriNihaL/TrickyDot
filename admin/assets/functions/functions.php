@@ -418,7 +418,7 @@ if (isset($_POST["delete_quote"])) {
   if ($run === TRUE) {
     header("Location: ../../quotes.php?success=Quote Deleted Successfully");
   } else {
-    header("Location: ../../quotes.php?error=Failed to Delete Quote!");
+    header("Location: ../../quotes.php?error=Failed to Delete quote!");
   }
 }
 

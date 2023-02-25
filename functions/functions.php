@@ -174,11 +174,11 @@ if (isset($_POST["quotes"])) {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $phone_number = $_POST["phone_number"];
-    $sql = "insert into tbl_message(name,email,phone_number,message) values('$name','$email','$phone_number','$message')";
+    $sql = "insert into tbl_quotes(name,email,phone_number) values('$name','$email','$phone_number')";
     if (mysqli_query($con, $sql)) {
-        header("Location: ../contact.php?success=contact added successfully");         
+        header("Location: ../model.php?success=model added successfully");         
     } else {
-        header("Location: ../contact.php?error=failed to add contact!");
+        header("Location: ../model.php?error=failed to add model!");
     }
     mysqli_close($con);
 }
